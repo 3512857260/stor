@@ -1,0 +1,20 @@
+a = int(input("请输入第1个数"))
+b = int(input("请输入第2个数"))
+c = int(input("请输入第3个数"))
+d = int(input("请输入第4个数"))
+e = int(input("请输入第5个数"))
+f = int(input("请输入第6个数"))
+g = int(input("请输入第7个数"))
+h = int(input("请输入第8个数"))
+i = int(input("请输入第9个数"))
+j = int(input("请输入第10个数"))
+sum=(a+b+c+d+e+f+g+h+i+j)
+print("10个数的和为：",sum)
+m =[a,b,c,d,e,f,g,h,i,j,]
+w =sum/10
+z = max(m)
+y = min(m)
+
+print("最大数是：",z)
+print("最小数是：",y)
+print("平均数：",w)
