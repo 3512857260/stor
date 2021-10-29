@@ -1,0 +1,37 @@
+from selenium import webdriver
+import time
+driver = webdriver.Chrome()   # 创建浏览器
+driver.maximize_window()      # 屏幕最大化
+driver.get("http://localhost:8080/HKR")     # 打开HKR网址
+# 定位元素
+driver.find_element_by_xpath("//*[@id='loginname']").send_keys("admin")
+driver.find_element_by_xpath("//*[@id='password']").send_keys("root")
+time.sleep(1)
+driver.find_element_by_xpath("//*[@id='submit']").click()
+driver.implicitly_wait(2)
+time.sleep(2)
+driver.find_element_by_xpath("//*[@id='img']").click()
+time.sleep(1)
+# driver.find_element_by_xpath('//*[@id="ul_pic"]/li[1]/img').click()
+# time.sleep(1)
+# driver.find_element_by_xpath('//*[@id="ul_pic"]/li[2]/img').click()
+# time.sleep(1)
+# driver.find_element_by_xpath('//*[@id="ul_pic"]/li[3]').click()
+# time.sleep(1)
+# driver.find_element_by_xpath('//*[@id="ul_pic"]/li[4]/img').click()
+# time.sleep(1)
+# driver.find_element_by_xpath('//*[@id="ul_pic"]/li[5]/img').click()
+# time.sleep(1)
+# driver.find_element_by_xpath('//*[@id="ul_pic"]/li[6]/img').click()
+# time.sleep(1)
+# driver.find_element_by_xpath('//*[@id="ul_pic"]/li[7]/img').click()
+# time.sleep(1)
+# driver.find_element_by_xpath('//*[@id="ul_pic"]/li[8]/img').click()
+# time.sleep(1)
+# driver.find_element_by_xpath('//*[@id="ul_pic"]/li[9]/img').click()
+# time.sleep(1)
+# driver.find_element_by_xpath('//*[@id="ul_pic"]/li[10]/img').click()
+# time.sleep(1)
+driver.find_element_by_xpath("//*[@id='lablefile']").click()
+time.sleep(5)
+# driver.quit()
